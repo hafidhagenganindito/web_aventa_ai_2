@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@theme {
+  --font-DidactGothic: "Didact Gothic", sans-serif;
+  --font-Nunito: "Nunito", sans-serif;
+}

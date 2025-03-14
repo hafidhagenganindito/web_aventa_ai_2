@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link href="/src/styles.css" rel="stylesheet" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Didact+Gothic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Nastaliq+Urdu:wght@400..700&family=Noto+Sans+TC:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playball&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <script type="text/javascript">
+      window.mychat = window.mychat || {};
+      window.mychat.server = "https://live.cekat.ai/widget.js";
+      window.mychat.iframeWidth = "400px";
+      window.mychat.iframeHeight = "700px";
+      window.mychat.accessKey = "BOTIQ-mIw4f8E6";
+      (function () {
+        var mychat = document.createElement("script");
+        mychat.type = "text/javascript";
+        mychat.async = true;
+        mychat.src = window.mychat.server;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mychat, s);
+      })();
+    </script>
+  </body>
+</html>
