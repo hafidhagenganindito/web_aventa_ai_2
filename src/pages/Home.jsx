@@ -3,8 +3,16 @@ import { Cards } from "../components/Cards";
 import Footer from "../components/Footer";
 import ManfaatAventa from "../components/Manfaat";
 import Testimonials from "../components/Testimony";
+import waBtn from "../images/wa.svg"
 
 export const HomePage = () => {
+
+  const login = () =>{
+    window.open("https://bisnistermudah.com/signin", "__blank")
+  }
+  const sendWa = () => {
+    window.open("https://wa.me/6285148197812", "__blank")
+  }
   return (
     <>
       <div>{BurgerMenu()}</div>
@@ -21,8 +29,7 @@ export const HomePage = () => {
             backgroundImage: 'url("/src/images/latar-belakang-biru.jpg")',
           }}
         >
-          <div className="max-w-md p-4">
-            <h1 className="text-4xl font-bold mb-4 text-white ">AVENTA</h1>
+          <div className="max-w-md p-4 mt-3">
             <h1 className="text-5xl font-bold mb-4">AVENTA</h1>
             <h2 className="text-3xl mb-6 ">
               Solusi Bisnis Cerdas dengan <br /> Teknologi AI
@@ -31,8 +38,8 @@ export const HomePage = () => {
               Meningkatkan Penjualan, Mengoptimalkan <br />
               Proses Bisnis, dan Meningkatkan Keuntungan
             </p>
-            <button className="text-white font-bold py-3 px-8 rounded-full border border-white bg-transparent">
-              <p>Daftar Sekarang</p>
+            <button onClick={login} className="text-white font-bold py-3 px-8 rounded-full border border-white bg-transparent">
+              <p>Login Sekarang</p>
             </button>
 
             {/* Img AI-Robot */}
@@ -91,6 +98,14 @@ export const HomePage = () => {
             Meningkatkan Keuntungan
           </p>
         </div>
+      </div>
+      <div>
+        <img
+          src={waBtn}
+          className="fixed w-[126.5px] z-50 right-16 px-[18px] bottom-[7px]"
+          alt="WhatsApp Button"
+          onClick={sendWa}
+        />
       </div>
 
       {/* Testimony */}

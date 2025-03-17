@@ -118,7 +118,6 @@ const Navbar = () => {
           alt="Logo"
           className="h-8 mr-4"
         />
-        <span className="font-bold text-xl">AVENTA</span>
       </div>
       <BurgerMenu />
     </nav>
